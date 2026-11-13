@@ -1,0 +1,28 @@
+--- Borrowing ---
+Alice borrowed: Book: Python 101 by A. Rao (ID 1)
+Could not borrow: 'Python 101' is already borrowed
+Bob borrowed: Magazine: Tech Today, issue 45 (ID 2)
+Could not borrow: Bob has reached the limit of 1 item(s)
+Alice has: ['Python 101']
+Bob has: ['Tech Today']
+
+--- Returning ---
+Could not return: Alice has not borrowed 'Planet Earth'
+Alice returned Python 101, 4 days late. Fee: Rs 8
+Bob returned Tech Today on time. Fee: Rs 0
+Alice has: []
+Bob has: []
+
+--- Late fees ---
+Book: Python 101 by A. Rao (ID 1) -> late fee for 3 days: Rs 6
+Magazine: Tech Today, issue 45 (ID 2) -> late fee for 3 days: Rs 3
+DVD: Planet Earth, 120 min (ID 3) -> late fee for 3 days: Rs 15
+
+--- Encapsulation ---
+Error: 'Book' object has no attribute '__available'
+Python 101 available? True
+
+--- Abstract class ---
+Error: Can't instantiate abstract class LibraryItem without an implementation for abstract method 'late_fee'
+
+Total items created: 3
